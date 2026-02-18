@@ -1,0 +1,15 @@
+# Firebase Secret Key (DO NOT UPLOAD)
+*.json
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# Virtual Environment
+.venv/
+
+# Saved violation images
+20*/
+
+# VS Code settings
+.vscode/
