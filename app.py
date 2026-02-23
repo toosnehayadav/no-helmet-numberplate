@@ -6,7 +6,7 @@ import os
 
 # ------------------ Firebase Connection ------------------
 if not firebase_admin._apps:
-    cred = credentials.Certificate("numberplate-5735e-firebase-adminsdk-fbsvc-9c9eb37d24.json")
+    cred = credentials.Certificate(dict(st.secrets["firebase"]))
     firebase_admin.initialize_app(cred, {
         'databaseURL': "https://numberplate-5735e-default-rtdb.firebaseio.com/"
     })
